@@ -1,0 +1,118 @@
+.projectCard {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 33%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.projectInfo {
+  width: 67%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  color: #303030;
+  font: 500 18px Roboto, sans-serif;
+  margin: 0 0 8px;
+}
+
+.projectDescription {
+  color: #9e95a2;
+  font: 12px Roboto, sans-serif;
+  margin: 0 0 19px;
+}
+
+.projectMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projectCategory {
+  font-size: 12px;
+}
+
+.categoryName {
+  color: #303030;
+  font-weight: 400;
+}
+
+.projectAuthor {
+  color: #9e95a2;
+  margin-top: 4px;
+}
+
+.projectAuthor span {
+  font-weight: 500;
+}
+
+.addToCartButton {
+  background-color: #df5532;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 13px;
+  font: 500 14px Roboto, sans-serif;
+  cursor: pointer;
+}
+
+.searchForm {
+  display: flex;
+  flex-grow: 1;
+}
+
+.searchInput {
+  flex-grow: 1;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 8px 17px;
+  font: 14px Roboto, sans-serif;
+  color: #9e95a2;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+@media (max-width: 991px) {
+  .projectCard {
+    flex-direction: column;
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .projectInfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .projectTitle {
+    font-size: 16px;
+  }
+
+  .projectDescription {
+    font-size: 11px;
+  }
+
+  .addToCartButton {
+    padding: 10px 11px;
+    font-size: 12px;
+  }
+}

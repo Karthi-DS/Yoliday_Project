@@ -1,0 +1,68 @@
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #848484;
+    display: flex;
+    position: absolute;
+    width: auto;
+    gap: 24px;
+    z-index: 0;
+    flex-wrap: wrap;
+    padding: 14px 61px;
+    font: 14px Roboto, sans-serif;
+    right: 0;
+  }
+
+  
+  .notificationIcon {
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: start;
+    gap: 11px;
+  }
+  
+  .userAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 4px;
+  }
+  
+  .userDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userName {
+    display: flex;
+    gap: 16px;
+    color: #303030;
+    font-weight: 600;
+  }
+  
+  .userIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .userRole {
+    color: #848484;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding: 14px 20px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .header {
+      display: none;
+    }
+  }
+  
